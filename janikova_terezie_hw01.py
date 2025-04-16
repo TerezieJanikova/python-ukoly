@@ -18,5 +18,5 @@ for znak in data:
 serazeny_slovnik_znaku = dict(sorted(pocet_znaku.items()))
 
 # Uložení slovníku do JSON souboru
-with open("janikova_terezie_hw01_.json", mode="w", encoding="utf-8") as json_file:
+with open("hw01_output.json", mode="w", encoding="utf-8") as json_file:
     json.dump(serazeny_slovnik_znaku, json_file, indent=4, ensure_ascii=False)
